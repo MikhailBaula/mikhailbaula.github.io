@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mikhail Sam Baula</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<script src="js/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+</head>
+<body>
+    <!-- header-section-starts -->
+    <div class="header">
+        <div class="header-banner">
+            <div class="container">
+                <div class="top-menu">
+                    <span class="menu">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="experience.html">PICS</a></li>
+                            <li><a href="mile.html">MILESTONE</a></li>
+                            <div class="clearfix"></div>
+                    </span>
+                    </ul>
+
+                </div>
+            </div>
+            <!--script-nav-->
+            <script>
+                $("span.menu").click(function () {
+                    $(".top-menu ul").slideToggle("slow", function () {
+                    });
+                });
+            </script>
+            <div class="header-banner-info text-center">
+                <a href="about.html"><img src="" alt="" /></a>
+                <h3>HELLO</h3>
+                <h1>My name is <span>Mikhail Sam Baula</span> </h1>
+                <p>I'm a ........... </p>
+                <span class="line"></span>
+                <ul class="social-icons">
+                    <li><a href="https://twitter.com/MonsterMiks" target="_blank"><i class="twitter"></i></a></li>
+                </ul>
+                <label></label>
+                <ul class="details">
+                    <li>Age     :     <a href="#">20</a></li>
+                    <li>Country     :     <a href="#">Taguig, Philippines</a></li>
+                    <li>Studying at     :     <a href="#">FEU Makati</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- content-section-ends -->
+    <!-- footer-section-starts -->
+    <div class="footer">
+        <div class="container">
+            <div class="copy-rights text-center">
+                <p>&copy; 2016 Created by: MIKHAIL SAM BAULA <a href="" target="target_blank"></a></p>
+            </div>
+        </div>
+    </div>
+    <!-- footer-section-ends -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+            };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>
